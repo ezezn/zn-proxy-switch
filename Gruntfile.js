@@ -13,7 +13,7 @@ if (isLinux32)
 if (isLinux64)
     os = "linux64";
 
-var nwVer = '0.10.0';
+var electronVersion = '1.2.6';
 
 var nwExec = "";
 
@@ -29,20 +29,12 @@ module.exports = function(grunt) {
         less: {
             './src/css/app.css': ['./src/css/app.less']
         },
-
-        nwjs: {
-            options: {
-                version: nwVer,
-                buildDir: './release', // Where the build version of my NW.js app is saved
-                platforms: ['win32'] // These are the platforms that we want to build
-            },
-            src: ['./src/**/*']
-        },
         'build-electron-app': {
             options: {
                 build_dir: './release',
                 platforms: ['win32', 'linux32', 'linux64'],
-                app_dir: './src'
+                app_dir: './src',
+                electron_version: electronVersion
             }
         },
         clean: ["./releases/**/*"],

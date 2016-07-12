@@ -32,6 +32,6 @@ define("app", [
         // Create the menubar
 
 
-        $state.go('ui-tool');
+        $state.go('home');
     });
 });
