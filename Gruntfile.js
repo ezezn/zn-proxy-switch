@@ -13,8 +13,6 @@ if (isLinux32)
 if (isLinux64)
     os = "linux64";
 
-var electronVersion = '1.2.6';
-
 var nwExec = "";
 
 if (!isWin) {
@@ -32,9 +30,8 @@ module.exports = function(grunt) {
         'build-electron-app': {
             options: {
                 build_dir: './release',
-                platforms: ['win32', 'linux32', 'linux64'],
-                app_dir: './src',
-                electron_version: electronVersion
+                platforms: ['win32'],
+                app_dir: './src'
             }
         },
         clean: ["./releases/**/*"],

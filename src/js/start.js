@@ -9,7 +9,6 @@ requirejs.config({
         'domReady': '../lib/requirejs-domready/domReady',
         'angular': '../lib/angular/angular',
         'angular-ui-router': '../lib/angular-ui-router/release/angular-ui-router',
-        'angular-animate': '../lib/angular-animate/angular-animate',
         'text': '../lib/requirejs-text/text'
     },
 
@@ -22,9 +21,6 @@ requirejs.config({
             exports: 'angular'
         },
         'angular-ui-router': {
-            deps: ['angular']
-        },
-        'angular-animate': {
             deps: ['angular']
         }
     },

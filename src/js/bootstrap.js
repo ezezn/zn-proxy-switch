@@ -6,7 +6,6 @@ define([
     'require',
     'angular',
     'angular-ui-router',
-    'angular-animate',
     'app'
 ], function(require, ng) {
     'use strict';

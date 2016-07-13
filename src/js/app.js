@@ -5,28 +5,26 @@
 define("app", [
     'angular',
     'angular-ui-router',
-    'angular-animate',
     //'text!',
-    './components/navigator/index',
+    './component/titlebar/index',
     //    './core/ui-components/index',
     //    './core/player/index',
     //    './home/index',
     //    './core/background/index',
-    './modules/ui-tool/index',
+    './modules/home/index',
     './states'
 ], function(ng) {
     'use strict';
 
     return ng.module('app', [
-        'app.component.navigator',
+        'app.component.titlebar',
         //        'app.core.ui.components',
         //        'app.core.player',
         //        'app.core.background',
         //        'app.core.launcher',
-        'app.module.ui-tool',
+        'app.module.home',
         'app.states',
-        'ui.router',
-        'ngAnimate'
+        'ui.router'
     ]).run(function($state, $rootScope) {
 
         // Create the menubar
