@@ -16,9 +16,9 @@ if (isLinux64)
 var nwExec = "";
 
 if (!isWin) {
-    nwExec = "cd release/" + os + "/ && ./electron ../../src";
+    nwExec = "cd release/" + os + "/ && ./electron --enable-logging";
 } else {
-    nwExec = "release\\" + os + "\\electron.exe src";
+    nwExec = "release\\" + os + "\\electron.exe --enable-logging";
 }
 module.exports = function(grunt) {
 

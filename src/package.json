@@ -1,5 +1,8 @@
 {
-    "main": "main.js",
-    "name": "zn-htpc",
-    "version": "0.1.0"
+  "main": "main.js",
+  "name": "zn-htpc",
+  "version": "0.1.0",
+  "devDependencies": {
+    "winreg": "^1.2.1"
+  }
 }

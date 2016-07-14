@@ -6,6 +6,7 @@ define("app", [
     'angular',
     'angular-ui-router',
     //'text!',
+
     './component/titlebar/index',
     //    './core/ui-components/index',
     //    './core/player/index',

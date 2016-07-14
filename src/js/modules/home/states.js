@@ -8,7 +8,7 @@ define(['../../states'], function(states) {
 
     return states.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-        $stateProvider.state('ui-tool', {
+        $stateProvider.state('home', {
             templateUrl: 'js/modules/home/home.view.html',
             controller: 'HomeCtrl'
         });
